@@ -1,0 +1,22 @@
+extensions:
+- keyString: "strings"
+outlineMenuArray: []
+completionsArray: []
+commandsArray: []
+metadata:
+  author: "1024jp"
+  distributionURL: "https://github.com/1024jp/CocoaDeveloperSet-coteditor"
+  version: "1.0"
+  license: "MIT License"
+  lastModified: "2014-10-13"
+charactersArray: []
+commentsArray: []
+valuesArray: []
+numbersArray: []
+stringsArray:
+- beginString: "\""
+  endString: "\""
+keywordsArray: []
+commentDelimiters:
+  endDelimiter: "*/"
+  beginDelimiter: "/*"

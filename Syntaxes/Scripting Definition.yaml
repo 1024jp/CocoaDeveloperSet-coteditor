@@ -1,0 +1,202 @@
+extensions:
+- keyString: "sdef"
+outlineMenuArray:
+- keyString: "    $1"
+  beginString: "<class .*name=\"([^\"]+)\""
+  bold: true
+- keyString: "    $1"
+  beginString: "<class-extension .*extends=\"([^\"]+)\""
+  bold: true
+- beginString: "<command .*name=\"([^\"]+)\""
+  keyString: "    $1"
+- italic: true
+  beginString: "<enumeration .*name=\"([^\"]+)\""
+  keyString: "    $1"
+- beginString: "<property .*name=\"([^\"]+)\""
+  underline: true
+  keyString: "        $1"
+- beginString: "<responds-to .*command=\"([^\"]+)\""
+  keyString: "        $1"
+- keyString: "$1"
+  beginString: "<suite .*name=\"([^\"]+)\""
+  underline: true
+  bold: true
+completionsArray:
+- keyString: "access-group"
+- keyString: "accessor"
+- keyString: "class"
+- keyString: "class-extension"
+- keyString: "cocoa"
+- keyString: "command"
+- keyString: "contents"
+- keyString: "dictionary"
+- keyString: "direct-parameter"
+- keyString: "documentation"
+- keyString: "element"
+- keyString: "enumeration"
+- keyString: "enumerator"
+- keyString: "event"
+- keyString: "html"
+- keyString: "parameter"
+- keyString: "property"
+- keyString: "record-type"
+- keyString: "responds-to"
+- keyString: "result"
+- keyString: "suite"
+- keyString: "synonym"
+- keyString: "type"
+- keyString: "value-type"
+- keyString: "xref"
+commandsArray:
+- beginString: "(?<=<)\\?[[:alnum:]_\\-.:]+"
+  regularExpression: true
+- beginString: "\\?(?=>)"
+  regularExpression: true
+attributesArray:
+- beginString: "(?<=xmlns:)xi\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\saccess\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sboolean-value\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sclass\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\scode\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\scommand\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sdescription\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sencoding\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sextends\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\shidden\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\shref\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sid\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sidentifier\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sin-properties\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sinherits\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sinline\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sinsert-at-beginning\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sinteger-value\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\skey\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\slist\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\smethod\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sname\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\soptional\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\splural\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\srequires-access\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sstring-value\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sstyle\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\starget\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\stitle\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\stype\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sversion\\b(?=[^<>]*>)"
+  regularExpression: true
+- beginString: "\\sxpointer\\b(?=[^<>]*>)"
+  regularExpression: true
+metadata:
+  author: "1024jp"
+  distributionURL: "https://github.com/1024jp/CocoaDeveloperSet-coteditor"
+  version: "1.0"
+  license: "MIT License"
+  lastModified: "2014-10-13"
+charactersArray:
+- beginString: "&\\S+?;"
+  regularExpression: true
+- beginString: "<![CDATA["
+  endString: "]]>"
+commentsArray: []
+valuesArray: []
+typesArray:
+- beginString: "(?<=<)![A-Z]*"
+  regularExpression: true
+numbersArray: []
+stringsArray:
+- beginString: "\""
+  endString: "\""
+- beginString: "(?<!\\w)'[^']*?'(?=[^<>]*>)"
+  regularExpression: true
+keywordsArray:
+- beginString: "(?<=</?)access-group\\b"
+  regularExpression: true
+- beginString: "(?<=</?)accessor\\b"
+  regularExpression: true
+- beginString: "(?<=</?)class-extension\\b"
+  regularExpression: true
+- beginString: "(?<=</?)class\\b"
+  regularExpression: true
+- beginString: "(?<=</?)cocoa\\b"
+  regularExpression: true
+- beginString: "(?<=</?)command\\b"
+  regularExpression: true
+- beginString: "(?<=</?)contents\\b"
+  regularExpression: true
+- beginString: "(?<=</?)dictionary\\b"
+  regularExpression: true
+- beginString: "(?<=</?)direct-parameter\\b"
+  regularExpression: true
+- beginString: "(?<=</?)documentation\\b"
+  regularExpression: true
+- beginString: "(?<=</?)element\\b"
+  regularExpression: true
+- beginString: "(?<=</?)enumeration\\b"
+  regularExpression: true
+- beginString: "(?<=</?)enumerator\\b"
+  regularExpression: true
+- beginString: "(?<=</?)event\\b"
+  regularExpression: true
+- beginString: "(?<=</?)html\\b"
+  regularExpression: true
+- beginString: "(?<=</?)parameter\\b"
+  regularExpression: true
+- beginString: "(?<=</?)property\\b"
+  regularExpression: true
+- beginString: "(?<=</?)record-type\\b"
+  regularExpression: true
+- beginString: "(?<=</?)responds-to\\b"
+  regularExpression: true
+- beginString: "(?<=</?)result\\b"
+  regularExpression: true
+- beginString: "(?<=</?)suite\\b"
+  regularExpression: true
+- beginString: "(?<=</?)synonym\\b"
+  regularExpression: true
+- beginString: "(?<=</?)type\\b"
+  regularExpression: true
+- beginString: "(?<=</?)value-type\\b"
+  regularExpression: true
+- beginString: "(?<=</?)xi:include\\b"
+  regularExpression: true
+- beginString: "(?<=</?)xref\\b"
+  regularExpression: true
+variablesArray:
+- beginString: "(?<=</?)[[:alnum:]_\\-.]+:(?=\\w)"
+  regularExpression: true
+- beginString: "(?<=\\s)[[:alnum:]_\\-.]+:(?=(\\w|[\\-.])+\\s*=)"
+  regularExpression: true
+commentDelimiters:
+  endDelimiter: "-->"
+  beginDelimiter: "<!--"
