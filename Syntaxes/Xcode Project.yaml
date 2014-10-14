@@ -1,11 +1,11 @@
 extensions:
 - keyString: "pbxproj"
-outlineMenuArray:
+outlineMenu:
 - beginString: "^/\\* Begin (.+) section \\*/$"
   keyString: "$1"
-completionsArray: []
-commandsArray: []
-attributesArray:
+completions: []
+commands: []
+attributes:
 - beginString: "PBXAggregateTarget"
 - beginString: "PBXBuildFile"
 - beginString: "PBXContainerItemProxy"
@@ -30,20 +30,20 @@ metadata:
   distributionURL: "https://github.com/1024jp/CocoaDeveloperSet-coteditor"
   version: "1.0"
   license: "MIT License"
-  lastModified: "2014-10-13"
-charactersArray: []
-commentsArray: []
-valuesArray:
+  lastModified: "2014-10-14"
+characters: []
+comments: []
+values:
 - beginString: "NO"
 - beginString: "YES"
 - beginString: "YES_ERROR"
-numbersArray:
+numbers:
 - beginString: "\\s[0-9A-F][0-9A-F.]*(?=\\s|;)"
   regularExpression: true
-stringsArray:
+strings:
 - beginString: "\""
   endString: "\""
-keywordsArray:
+keywords:
 - beginString: "\\b[a-z0-9_.]+(?= \\= )"
   ignoreCase: true
   regularExpression: true

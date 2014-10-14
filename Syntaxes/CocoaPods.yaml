@@ -2,11 +2,11 @@ extensions:
 - keyString: "podspec"
 filenames:
 - keyString: "Podfile"
-completionsArray: []
-outlineMenuArray:
+completions: []
+outlineMenu:
 - beginString: "(^[\\t ]*def)[\\t ]+([^\\s(]*)"
   keyString: "$1 $2"
-commandsArray:
+commands:
 - beginString: "gsub"
 - beginString: "new"
 - beginString: "open"
@@ -18,7 +18,7 @@ commandsArray:
 - beginString: "to_int"
 - beginString: "to_s"
 - beginString: "to_str"
-attributesArray:
+attributes:
 - beginString: ":branch"
 - beginString: ":commit"
 - beginString: ":debug"
@@ -49,15 +49,15 @@ metadata:
   distributionURL: "https://github.com/1024jp/CocoaDeveloperSet-coteditor"
   version: "1.0"
   license: "MIT License"
-  lastModified: "2014-10-13"
-charactersArray: []
-commentsArray: []
-valuesArray:
+  lastModified: "2014-10-14"
+characters: []
+comments: []
+values:
 - beginString: "__FILE__"
 - beginString: "false"
 - beginString: "nil"
 - beginString: "true"
-typesArray:
+types:
 - beginString: "Array"
 - beginString: "Class"
 - beginString: "File"
@@ -66,21 +66,21 @@ typesArray:
 - beginString: "Pod"
 - beginString: "Spec"
 - beginString: "String"
-numbersArray:
+numbers:
 - beginString: "\\b[0-9][0-9_]*\\.[0-9_]+([eE][0+][0-9_]+)?r?i?\\b"
   regularExpression: true
 - beginString: "\\b[0-9][0-9_]*\\b"
   regularExpression: true
 - beginString: "`"
   endString: "`"
-stringsArray:
+strings:
 - beginString: "\""
   endString: "\""
 - beginString: "'"
   endString: "'"
 - beginString: "<<-?([\"'`]?)(\\w+)\\1(?:.|\\n)*?\\n[\\t ]*\\2$"
   regularExpression: true
-keywordsArray:
+keywords:
 - beginString: "alias"
 - beginString: "and"
 - beginString: "def"
@@ -114,7 +114,7 @@ keywordsArray:
 - beginString: "while"
 - beginString: "xcodeproj"
 - beginString: "yield"
-variablesArray:
+variables:
 - beginString: "(?<=\\.)ios\\b"
   regularExpression: true
 - beginString: "(?<=\\.)osx\\b"

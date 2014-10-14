@@ -1,6 +1,6 @@
 extensions:
 - keyString: "sdef"
-outlineMenuArray:
+outlineMenu:
 - keyString: "    $1"
   beginString: "<class .*name=\"([^\"]+)\""
   bold: true
@@ -21,7 +21,7 @@ outlineMenuArray:
   beginString: "<suite .*name=\"([^\"]+)\""
   underline: true
   bold: true
-completionsArray:
+completions:
 - keyString: "access-group"
 - keyString: "accessor"
 - keyString: "class"
@@ -47,12 +47,12 @@ completionsArray:
 - keyString: "type"
 - keyString: "value-type"
 - keyString: "xref"
-commandsArray:
+commands:
 - beginString: "(?<=<)\\?[[:alnum:]_\\-.:]+"
   regularExpression: true
 - beginString: "\\?(?=>)"
   regularExpression: true
-attributesArray:
+attributes:
 - beginString: "(?<=xmlns:)xi\\b(?=[^<>]*>)"
   regularExpression: true
 - beginString: "\\saccess\\b(?=[^<>]*>)"
@@ -122,24 +122,24 @@ metadata:
   distributionURL: "https://github.com/1024jp/CocoaDeveloperSet-coteditor"
   version: "1.0"
   license: "MIT License"
-  lastModified: "2014-10-13"
-charactersArray:
+  lastModified: "2014-10-14"
+characters:
 - beginString: "&\\S+?;"
   regularExpression: true
 - beginString: "<![CDATA["
   endString: "]]>"
-commentsArray: []
-valuesArray: []
-typesArray:
+comments: []
+values: []
+types:
 - beginString: "(?<=<)![A-Z]*"
   regularExpression: true
-numbersArray: []
-stringsArray:
+numbers: []
+strings:
 - beginString: "\""
   endString: "\""
 - beginString: "(?<!\\w)'[^']*?'(?=[^<>]*>)"
   regularExpression: true
-keywordsArray:
+keywords:
 - beginString: "(?<=</?)access-group\\b"
   regularExpression: true
 - beginString: "(?<=</?)accessor\\b"
@@ -192,7 +192,7 @@ keywordsArray:
   regularExpression: true
 - beginString: "(?<=</?)xref\\b"
   regularExpression: true
-variablesArray:
+variables:
 - beginString: "(?<=</?)[[:alnum:]_\\-.]+:(?=\\w)"
   regularExpression: true
 - beginString: "(?<=\\s)[[:alnum:]_\\-.]+:(?=(\\w|[\\-.])+\\s*=)"
