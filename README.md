@@ -2,7 +2,7 @@
 CocoaDeveloperSet-coteditor
 ===========================
 
-This is a collection of [CotEditor](http://coteditor.github.io/)'s syntax styles that are related to development with Cocoa.
+This is a collection of [CotEditor](http://coteditor.com/)'s syntax styles that are related to development with Cocoa.
 Use them with CotEditor 2.0 or later.
 
 
