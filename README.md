@@ -37,6 +37,6 @@ Author
 Lisence
 ----------------------
 
-© 2014 1024jp
+© 2014-2016 1024jp
 
 The files are distributed under the terms of the MIT license. See [LICENSE](LICENSE) file for details.
