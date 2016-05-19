@@ -1,0 +1,47 @@
+extensions:
+- keyString: "crash"
+filenames: []
+interpreters: []
+metadata:
+  distributionURL: "https://github.com/1024jp/CocoaDeveloperSet-coteditor"
+  lastModified: "2016-05-20"
+  author: "1024jp"
+  license: "MIT License"
+  version: "1.0.0"
+keywords:
+- beginString: "^[a-z0-9][-a-z0-9_() /]*(?=:)"
+  ignoreCase: true
+  regularExpression: true
+commands: []
+types:
+- beginString: "(?<=::) .+$"
+  regularExpression: true
+attributes:
+- beginString: "(?<=^[0-9]{1,3}) +[a-z][a-z0-9_.]+\\s"
+  ignoreCase: true
+  regularExpression: true
+variables: []
+values:
+- beginString: "<"
+  endString: ">"
+numbers:
+- beginString: "\\b[0-9]+\\b"
+  regularExpression: true
+strings:
+- beginString: "\""
+  endString: "\""
+characters:
+- beginString: "\\b0x[0-9a-f]+\\b"
+  regularExpression: true
+  ignoreCase: true
+  description: "hex"
+comments: []
+commentDelimiters: {}
+completions: []
+outlineMenu:
+- beginString: "^Process: *(.*) (?=\\[)"
+  keyString: "Process: $1"
+- beginString: "^Thread \\d+ Crashed:.*$"
+  bold: true
+- ignoreCase: false
+  beginString: "^Thread \\d+:.*$"

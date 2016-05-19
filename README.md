@@ -15,6 +15,7 @@ Styles for:
 - Scripting Definition (.sdef)
 - CocoaPods (Podfile and .podspec)
 - Strings (.strings)
+- Crash Log (.crash)
 
 
 Install
